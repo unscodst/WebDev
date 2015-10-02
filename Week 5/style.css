@@ -1,0 +1,104 @@
+/**
+I will add 5 points extra credit for anyone who successfully does either of the following:
+--a dropdown navigation menu
+--a transition, transformation or animation 
+**/
+
+body {
+    background-color: #fff3cc;
+}
+
+#head {
+    background: url(mountain.jpg) center -250px no-repeat;
+    position: center;
+    margin: -8px 0 10px 0;
+    background-size: 1900px;
+
+
+}
+
+header h1, nav{
+    font-family: Verdana;
+    color: aliceblue;
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.26);
+
+}
+header nav {
+    padding-bottom: 50px;
+    margin-top: -22px;
+}
+
+header li {
+    list-style-type: none;
+    clear: both;
+}
+
+header li a {
+    font-size: 1.3em;
+    text-decoration: none;
+}
+header a:visited {
+    color: #ebd768;
+
+}
+
+#one {
+    font-family: monospace;
+}
+
+#secone {
+    font-family: sans-serif;
+    text-shadow: 5px 5px 30px;
+    font-weight: 900;
+}
+
+#backimg {
+    border: 5px groove;
+}
+
+section h5 {
+    font-family: serif;
+    font-weight: normal;
+}
+
+#sectwo {
+    color: #f252ff;
+    background: #3f00a3;
+}
+
+#roll {
+    -webkit-transition: -webkit-transform 2s;
+    transition: transform 2s;
+}
+
+#roll:hover {
+    -webkit-transform: translateX(500px) rotate(180deg);
+    transform: translateX(500px) rotate(360deg);
+
+}
+section > p:hover {
+    color: red;
+}
+
+.licss {
+    font-family: Verdana;
+    font-size: 0.8em;
+}
+
+#left {
+    float: left;
+}
+
+#side {
+    height: 150px;
+    width: 350px;
+    float: right;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+#clear {
+    clear: both;
+    text-align: center;
+}
