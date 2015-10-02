@@ -9,17 +9,14 @@ body {
 }
 
 #head {
-    background: url(mountain.jpg) center -250px no-repeat;
-    position: center;
+    background: url(mountain.jpg) 0 -100px no-repeat;
     margin: -8px 0 10px 0;
-    background-size: 1900px;
-
-
+    background-size: 100%;
 }
 
 header h1, nav{
     font-family: Verdana;
-    color: aliceblue;
+    color: #edf6ff;
     margin-left: 50px;
     background-color: rgba(0, 0, 0, 0.26);
 
