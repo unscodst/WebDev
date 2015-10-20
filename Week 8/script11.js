@@ -1,4 +1,4 @@
-var buzzwords = new Array ("Aggregate",	
+var svWords = new Array ("Aggregate",	
 	"Richard Hendricks",
 	"Hooli",
 	"Pied Piper",
@@ -40,7 +40,7 @@ var buzzwords = new Array ("Aggregate",
 	"Silicon Valley"
 );
 
-var usedWords = new Array(buzzwords.length);
+var usedWords = new Array(svWords.length);
 window.onload = initAll;
 
 function initAll() {
@@ -61,19 +61,19 @@ function newCard() {
 
 function setSquare(thisSquare) {
 	do {
-		var randomWord = Math.floor(Math.random() * buzzwords.length);
+		var randomWord = Math.floor(Math.random() * svWords.length);
 	}
 	while (usedWords[randomWord]);
 
 	usedWords[randomWord] = true;
 	var currSquare = "square" + thisSquare;
-	document.getElementById(currSquare).innerHTML = buzzwords[randomWord];
+	document.getElementById(currSquare).innerHTML = svWords[randomWord];
 	document.getElementById(currSquare).className = "";
 	document.getElementById(currSquare).onmousedown = toggleColor;
 }
 
 function anotherCard() {
-	for (var i=0; i<buzzwords.length; i++) {
+	for (var i=0; i<svWords.length; i++) {
 		usedWords[i] = false;
 	}
 
