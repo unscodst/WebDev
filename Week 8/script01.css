@@ -24,8 +24,12 @@ th, td {
 	width: 20%;
 }
 
-#free, .pickedBG {
+#free {
 	background-color: #f66;
+}
+
+.pickedBG {
+    background-color: #66a7ff;
 }
 
 .winningBG {
