@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>About Me</title>
+        <style>
+            .listitem {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About Me</h1>
+
+        <ul>
+            <li>Nickname: <span id="nickname"></span>
+            <li>Favorites:  <span id="favorites"></span>
+            <li>Hometown: <span id="hometown"></span>
+            <li>Colors: <span id="color"></span>
+        </ul>
+
+        <script>
+document.body.style.fontFamily = 'Times New Roman, Courier New';
+document.getElementById('nickname').innerHTML = 'Chief (Master Chief)';
+document.getElementById('favorites').innerHTML = '3D Design';
+document.getElementById('hometown').innerHTML = 'Kent, OH';
+document.getElementById('color').innerHTML = 'Red';
+var items = document.getElementsByTagName('li');
+for (var i = 0; i < items.length; i++) {
+    items[i].className = 'listitem';
+}
+
+var myPic = document.createElement('img');
+myPic.src = 'http://assets.vg247.com/current//2015/06/fallout_4_10.jpg';
+myPic.width = '720';
+document.body.appendChild(myPic);
+        </script>
+    </body>
+</html>
