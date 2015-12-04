@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FactureDB</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome To FactureDB</h1>
+            <p>FactureDB is created to solve a problem in the ever growing DIY maker community.</p>
+        </div>
+        <div>
+            <h4>You see a problem</h4>
+            <p>You notice a problem and after some research you come up with an idea to solve that problem</p>
+
+        </div>
+        <div>
+            <h4>Time to Prototype</h4>
+            <p>You design a product, 3D Print it, and give it to customers. You then gather feedback and improve your product now you're ready to sell it to a wider audience</p>
+        </div>
+        <div>
+            <h4>How do you manufacture it?</h4>
+            <p>You see kickstarter campaigns advertising all of these steps and then say "We have manufacturers lined up to make this product" but how did they do that? Who are these manufacturers? How did they find them? How much does it cost them?</p>
+            <p>FactureDB is the solution to that problem. We are a sortable database that allows the Maker Community find a manufature that suits there needs. Sort by Material Specialization, Country of Origin, and Average Manufacturing Costs (when provided)</p>
+        </div>
+        <hr>
+        <div>
+
+            <form id="info">
+                <label>Logo:</label> <input type="text" name="logo" id="logo">
+                <label>Company:</label> <input type="text" name="company" id="company">
+                <label>Country:</label> <input type="text" name="country" id="country">
+                <label>Description:</label> <input type="text" name="description" id="description" maxlength="140">
+                <label>Materials:</label> <input type="text" name="materials" id="materials">
+                <label>Website:</label> <input type="text" name="website" id="website">
+                <label>Email:</label> <input type="text" name="email" id="email">
+                <label>Phone Number:</label> <input type="number" name="phone" id="phone">
+
+                <input type="button" value="Submit" name="submit" id="button">
+        </div>
+
+
+
+        <div>
+            Table Start
+            <table border="1" id="myTable">
+                <thead>
+                    <tr>
+                        <th colspan="8"> Table Heading</th>
+                    </tr>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Company</th>
+                        <th>Country</th>
+                        <th>Description</th>
+                        <th>Materials</th>
+                        <th>Website</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>                    
+                    </tr>
+                </thead>
+                <tbody>                    
+                    
+                </tbody>
+            </table>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+
+    </body>
+</html>
