@@ -9,7 +9,7 @@ $(document).ready(function() {
         var email = $('#email').val();
         var phone = $('#phone').val();
     
-        $('#myTable tr:last').after("<tr><td>" + logo + "</td><td>" + company + "</td><td>" + country + "</td><td>" + description + "</td><td>" + materials + "</td><td>" + website + "</td><td>" + email + "</td><td>" + phone + "</td></tr>");
+        $('#myTable tr:last').after('<tr><td> <img class="logoimg" src="'+ logo + '"></td><td>' + company + '</td><td>' + country + '</td><td>' + description + '</td><td>' + materials + '</td><td>' + website + '</td><td>' + email + '</td><td>' + phone + '</td></tr>');
 
     })
 });
