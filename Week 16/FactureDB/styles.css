@@ -8,5 +8,30 @@
 }
 
 .tcenter {
-    text-align: center;
+    position: ;
+}
+
+.text {
+    clear: both;
+}
+
+.lightIcon {
+    background-image: url(img/ic_lightbulb_outline_white_48px.svg);
+    background-position: 50% 50%;
+    background-size: 110px;
+    background-repeat: no-repeat;    
+}
+
+.buildIcon {
+    background-image: url(img/ic_build_white_48px.svg);
+    background-position: 50% 50%;
+    background-size: 110px;
+    background-repeat: no-repeat;    
+}
+
+.packIcon {
+    background-image: url(img/ic_power_input_white_48px.svg);
+    background-position: 50% 50%;
+    background-size: 110px;
+    background-repeat: no-repeat;    
 }

@@ -9,9 +9,6 @@ $(document).ready(function() {
         var email = $('#email').val();
         var phone = $('#phone').val();
 
-
-
-
         switch(country) { 
             case "AF":
                 countryString = "Afghanistan";
@@ -762,15 +759,9 @@ $(document).ready(function() {
                 break;
         }
 
-
-
-
         $('#myTable tr:last').after('<tr><td> <img class="logoimg" src="' + logo + '"></td><td>' + company + '</td><td>' + countryString + '</td><td>' + description + '</td><td>' + materials + '</td><td>' + website + '</td><td>' + email + '</td><td>' + phone + '</td></tr>');
 
     });
-
-
-
 
 });
 
@@ -785,6 +776,7 @@ function validateInput() {
         return true;
     }
 }
+
 function promptMessage(message, promptLocation, color) {
     document.getElementById(promptLocation).innerHTML = message;
     document.getElementById(promptLocation).style.color = color;
