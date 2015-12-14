@@ -69,16 +69,19 @@
                         <form id="info">
                             <div class="mdl-cell--12-col center">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--2-col">
-                                    <label class="mdl-textfield__label">Logo:</label> 
+                                    <label class="mdl-textfield__label">Logo:</label>
+                                    <div class="mdl-tooltip mdl-tooltip--large" for="logo">Insert a link to your company logo. Images will be scaled to fit a maximum size 128 pixels by 128 pixels. </div>
                                     <input class="mdl-textfield__input" type="url" name="logo" id="logo"></div>
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--3-col">
                                     <label class="mdl-textfield__label">Company:</label> 
+                                    <div class="mdl-tooltip mdl-tooltip--large" for="company">Company Name </div>
                                     <input class="mdl-textfield__input" type="text" name="company" id="company">
                                 </div>
 
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--3-col">
                                     <div>
                                         <label class="mdl-textfield__label mdl-layout-spacer">Country:</label> 
+
                                     </div>
 
                                     <select class="mdl-textfield__input" id="country">
@@ -334,14 +337,19 @@
                                     </select>
                                 </div>
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--8-col">
-                                    <label class="mdl-textfield__label">Description:</label><textarea class="mdl-textfield__input" type="text" name="description" id="description" maxlength="140"></textarea>
+                                    <label class="mdl-textfield__label">Description:</label>
+                                    <div class="mdl-tooltip mdl-tooltip--large" for="description">Explain what your company does. This desciption is limited to 140 characters.</div>
+                                    <textarea class="mdl-textfield__input" type="text" name="description" id="description" maxlength="140"></textarea>
                                 </div>
                             </div>
 
                             <div class="mdl-cell--12-col center">
 
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--2-col">
-                                    <label class="mdl-textfield__label">Materials:</label> <input class="mdl-textfield__input" type="text" name="materials" id="materials"></div>
+                                    <label class="mdl-textfield__label">Materials:</label> 
+                                    <div class="mdl-tooltip mdl-tooltip--large" for="materials">Ex: ABS, PLA, Aluminum, Steel, Wood etc.</div>                        
+                                    <input class="mdl-textfield__input" type="text" name="materials" id="materials">
+                                </div>
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--3-col">
                                     <label class="mdl-textfield__label">Website:</label> <input class="mdl-textfield__input" type="url" name="website" id="website"></div>
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--2-col">
