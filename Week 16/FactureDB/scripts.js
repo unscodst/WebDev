@@ -759,7 +759,7 @@ $(document).ready(function() {
                 break;
         }
 
-        $('#myTable tr:last').after('<tr><td> <img class="logoimg" src="' + logo + '"></td><td>' + company + '</td><td>' + countryString + '</td><td>' + description + '</td><td>' + materials + '</td><td>' + website + '</td><td>' + email + '</td><td>' + phone + '</td></tr>');
+        $('#myTable tr:last').after('<tr><td class="mdl-data-table__cell--non-numeric"> <img class="logoimg" src="' + logo + '"></td><td class="mdl-data-table__cell--non-numeric">' + company + '</td><td class="mdl-data-table__cell--non-numeric">' + countryString + '</td><td class="mdl-data-table__cell--non-numeric">' + description + '</td><td class="mdl-data-table__cell--non-numeric">' + materials + '</td><td class="mdl-data-table__cell--non-numeric">' + website + '</td><td class="mdl-data-table__cell--non-numeric">' + email + '</td><td class="mdl-data-table__cell--non-numeric">' + phone + '</td></tr>');
 
     });
 
