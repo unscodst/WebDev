@@ -6,33 +6,35 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-
+        <!-- Import hosted Material Design Library -->
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-indigo.min.css" /> 
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <title>FactureDB</title>
     </head>
-    <body class="">
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">          
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <!-- Top banner created with three rows-->
             <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary mdl-shadow--2dp">
                 <div class="mdl-layout__header-row">
                 </div>
                 <div class="mdl-layout__header-row mdl-color-text--white"><h1>Welcome To FactureDB</h1>
                 </div>
                 <div class="mdl-layout__header-row mdl-color-text--white">
-                    <p>FactureDB is created to solve a problem in the ever growing DIY maker community.</p>
+                    <p>FactureDB is a database of manufactures for the Maker Community.</p>
                 </div>
             </header>
 
-
-            <main class="mdl-layout__content mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+            <!-- main content of page starts here -->
+            <main class="mdl-color--grey-100 mdl-color-text--grey-700">
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col mdl-card mdl-grid mdl-grid--no-spacing ">
+                    <!-- First Card -->
+                    <div class="mdl-cell mdl-cell--4-col mdl-card mdl-grid mdl-grid--no-spacing">
 
                         <div class="mdl-card__title mdl-card--expand mdl-color--indigo-500">
 
-                            <h4 class="mdl-card__title-text mdl-color-text--white text">You see a problem</h4>
+                            <h4 class="mdl-card__title-text mdl-color-text--white text">You see a problem.</h4>
                         </div>
                         <div class="mdl-card__title mdl-card--expand mdl-color--indigo-500 lightIcon">
                         </div>
@@ -40,6 +42,7 @@
                             <p>You notice a problem and after some research you come up with an idea to solve that problem</p>
                         </div>
                     </div>
+                    <!-- Second Card -->
                     <div class="mdl-cell mdl-cell--4-col mdl-card mdl-grid mdl-grid--no-spacing ">
                         <div class="mdl-card__title mdl-card--expand mdl-color--indigo-500">
                             <h4 class="mdl-card__title-text mdl-color-text--white">Time to Prototype</h4>
@@ -47,9 +50,10 @@
                         <div class="mdl-card__title mdl-card--expand mdl-color--indigo-500 buildIcon">
                         </div>
                         <div class="mdl-card__supporting-text">
-                            <p>You design a product, 3D Print it, and give it to customers. You then gather feedback and improve your product now you're ready to sell it.</p>
+                            <p>You design a product, 3D Print it, and give it to customers. You then gather feedback and improve your product. Now you're ready to sell it.</p>
                         </div>
                     </div>
+                    <!-- Third Card -->
                     <div class="mdl-cell mdl-cell--4-col mdl-card mdl-grid mdl-grid--no-spacing ">
                         <div class="mdl-card__title mdl-card--expand mdl-color--indigo-500">
                             <h4 class="mdl-card__title-text mdl-color-text--white">How do you manufacture it?</h4>
@@ -57,17 +61,17 @@
                         <div class="mdl-card__title mdl-card--expand mdl-color--indigo-500 packIcon">
                         </div>
                         <div class="mdl-card__supporting-text">
-                            <p>You see kickstarter campaigns advertising all of these steps and then say "We have manufacturers lined up to make this product" but how did they do that? Who are these manufacturers? How did they find them? How much does it cost them?</p>
-                            <p>FactureDB is the solution to that problem. We are a sortable database that allows the Maker Community to find a manufature that suits there needs. Sort by Material Specialization, Country of Origin, and Average Manufacturing Costs, when provided.</p>
+                            <p>You see kickstarter campaigns advertising all of these steps and then say "We have manufacturers lined up to make this product" but how did they do that? Who are these manufacturers? How did they find them? How much does it cost?</p>
+                            <p>FactureDB is the solution to that problem. We are a sortable database that allows the Maker Community to find a manufature that suits there needs. Sort by Material Specialization, Country of Origin, or Average Manufacturing Costs, when provided.</p>
 
                         </div>
                     </div>
                 </div>
-
+                <!-- Begin User input form  section-->
                 <div class="mdl-grid">
-                    <div class="mdl-color--white mdl-cell--12-col">
+                    <div class="mdl-color--white mdl-cell--12-col cen">                      
                         <form id="info">
-                            <div class="mdl-cell--12-col center">
+                            <div class="center">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--2-col">
                                     <label class="mdl-textfield__label">Logo:</label>
                                     <div class="mdl-tooltip mdl-tooltip--large" for="logo">Insert a link to your company logo. Images will be scaled to fit a maximum size 128 pixels by 128 pixels. </div>
@@ -80,10 +84,9 @@
 
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--3-col">
                                     <div>
-                                        <label class="mdl-textfield__label mdl-layout-spacer">Country:</label> 
-
+                                        <label class="mdl-textfield__label mdl-layout-spacer">Country:</label>
                                     </div>
-
+                                    <!-- Creates a Country Selection dropdown list -->
                                     <select class="mdl-textfield__input" id="country">
                                         <option value="AF">Afghanistan</option>
                                         <option value="AX">Åland Islands</option>
@@ -339,12 +342,10 @@
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--8-col">
                                     <label class="mdl-textfield__label">Description:</label>
                                     <div class="mdl-tooltip mdl-tooltip--large" for="description">Explain what your company does. This desciption is limited to 140 characters.</div>
-                                    <textarea class="mdl-textfield__input" type="text" name="description" id="description" maxlength="140"></textarea>
+                                    <textarea class="mdl-textfield__input" name="description" id="description" maxlength="140"></textarea>
                                 </div>
                             </div>
-
                             <div class="mdl-cell--12-col center">
-
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--2-col">
                                     <label class="mdl-textfield__label">Materials:</label> 
                                     <div class="mdl-tooltip mdl-tooltip--large" for="materials">Ex: ABS, PLA, Aluminum, Steel, Wood etc.</div>                        
@@ -365,13 +366,13 @@
                         </form>
                     </div>
                 </div>
-
+                <!-- Creates table section -->
                 <div class="mdl-grid">
-                    <div class="mdl-cell--12-col">
-                        <table border="1" id="myTable" class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col">
+                    <div class="mdl-cell--12-col cen">
+                        <table  id="myTable" class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col">
                             <thead>
                                 <tr>
-                                    <th colspan="8" class="mdl-data-table__cell--non-numeric">Table Heading</th>
+                                    <th colspan="8" class="mdl-data-table__cell--non-numeric">List of Manufacturers</th>
                                 </tr>
                                 <tr>
                                     <th class="mdl-data-table__cell--non-numeric">Logo</th>
@@ -391,9 +392,7 @@
                 </div>
             </main>
         </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="scripts.js"></script>
-
     </body>
 </html>
